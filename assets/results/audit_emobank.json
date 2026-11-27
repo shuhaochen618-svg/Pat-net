@@ -1,0 +1,148 @@
+{
+  "total_sentences": 10062,
+  "split_counts": {
+    "train": 8062,
+    "test": 1000,
+    "dev": 1000
+  },
+  "reader_hist_coverage": 10062,
+  "writer_hist_coverage": 4199,
+  "qc_reconstruction": {
+    "reader": {
+      "exact_n": 8365,
+      "recovered_subset": 1960,
+      "unmatched": 0,
+      "max_stat_err_vs_published_csv": 0.004911
+    },
+    "writer": {
+      "exact_n": 3436,
+      "recovered_subset": 858,
+      "unmatched": 0,
+      "max_stat_err_vs_published_csv": 0.004911
+    }
+  },
+  "emobank_V_vs_reader_max_diff": 1.0,
+  "emobank_V_vs_mean_WR_max_diff": 0.3,
+  "document_overlap": {
+    "train_test_shared_docs": 110,
+    "train_dev_shared_docs": 121,
+    "total_unique_docs": 136
+  },
+  "reader_mean_collapse_audit_10062": {
+    "V": {
+      "total_n": 10062,
+      "mean_2p5_3p5_n": 8069,
+      "unanimous_neutral_n": 3498,
+      "polarized_n": 645,
+      "polarized_frac_in_neutral_band": 0.0799,
+      "diffuse_moderate_n": 1495,
+      "bimodal_both_tails_all_n": 466
+    },
+    "A": {
+      "total_n": 10062,
+      "mean_2p5_3p5_n": 8954,
+      "unanimous_neutral_n": 2508,
+      "polarized_n": 1978,
+      "polarized_frac_in_neutral_band": 0.2209,
+      "diffuse_moderate_n": 1687,
+      "bimodal_both_tails_all_n": 1698
+    },
+    "D": {
+      "total_n": 10062,
+      "mean_2p5_3p5_n": 9255,
+      "unanimous_neutral_n": 3623,
+      "polarized_n": 1283,
+      "polarized_frac_in_neutral_band": 0.1386,
+      "diffuse_moderate_n": 1466,
+      "bimodal_both_tails_all_n": 1091
+    }
+  },
+  "genre_perspective_shift_10062": {
+    "SemEval": {
+      "n": 1192,
+      "has_writer_hist_n": 0,
+      "has_reader_hist_n": 1192,
+      "V_signed_R_minus_W": -0.0635,
+      "A_signed_R_minus_W": 0.0806,
+      "D_signed_R_minus_W": -0.0557,
+      "frac_abs_V_ge_0p5": 0.2047,
+      "frac_abs_A_ge_0p5": 0.2139,
+      "frac_abs_D_ge_0p5": 0.1653
+    },
+    "blog": {
+      "n": 1336,
+      "has_writer_hist_n": 1336,
+      "has_reader_hist_n": 1336,
+      "V_signed_R_minus_W": 0.0168,
+      "A_signed_R_minus_W": -0.0105,
+      "D_signed_R_minus_W": -0.0221,
+      "frac_abs_V_ge_0p5": 0.1108,
+      "frac_abs_A_ge_0p5": 0.1639,
+      "frac_abs_D_ge_0p5": 0.116,
+      "V_w1_mean": 0.2392,
+      "A_w1_mean": 0.324,
+      "D_w1_mean": 0.2611
+    },
+    "essays": {
+      "n": 1135,
+      "has_writer_hist_n": 1135,
+      "has_reader_hist_n": 1135,
+      "V_signed_R_minus_W": -0.0282,
+      "A_signed_R_minus_W": 0.0155,
+      "D_signed_R_minus_W": -0.0221,
+      "frac_abs_V_ge_0p5": 0.096,
+      "frac_abs_A_ge_0p5": 0.1771,
+      "frac_abs_D_ge_0p5": 0.1366,
+      "V_w1_mean": 0.1961,
+      "A_w1_mean": 0.3373,
+      "D_w1_mean": 0.2627
+    },
+    "fiction": {
+      "n": 2753,
+      "has_writer_hist_n": 1728,
+      "has_reader_hist_n": 2753,
+      "V_signed_R_minus_W": -0.0203,
+      "A_signed_R_minus_W": 0.0261,
+      "D_signed_R_minus_W": -0.0524,
+      "frac_abs_V_ge_0p5": 0.1304,
+      "frac_abs_A_ge_0p5": 0.2027,
+      "frac_abs_D_ge_0p5": 0.1707,
+      "V_w1_mean": 0.2567,
+      "A_w1_mean": 0.3602,
+      "D_w1_mean": 0.3157
+    },
+    "letters": {
+      "n": 1413,
+      "has_writer_hist_n": 0,
+      "has_reader_hist_n": 1413,
+      "V_signed_R_minus_W": 0.0435,
+      "A_signed_R_minus_W": 0.0337,
+      "D_signed_R_minus_W": -0.0045,
+      "frac_abs_V_ge_0p5": 0.1628,
+      "frac_abs_A_ge_0p5": 0.2243,
+      "frac_abs_D_ge_0p5": 0.1408
+    },
+    "newspaper": {
+      "n": 1314,
+      "has_writer_hist_n": 0,
+      "has_reader_hist_n": 1314,
+      "V_signed_R_minus_W": -0.0113,
+      "A_signed_R_minus_W": 0.0352,
+      "D_signed_R_minus_W": -0.0465,
+      "frac_abs_V_ge_0p5": 0.1096,
+      "frac_abs_A_ge_0p5": 0.1697,
+      "frac_abs_D_ge_0p5": 0.1324
+    },
+    "travel-guides": {
+      "n": 919,
+      "has_writer_hist_n": 0,
+      "has_reader_hist_n": 919,
+      "V_signed_R_minus_W": 0.0467,
+      "A_signed_R_minus_W": 0.0208,
+      "D_signed_R_minus_W": 0.0136,
+      "frac_abs_V_ge_0p5": 0.0892,
+      "frac_abs_A_ge_0p5": 0.2024,
+      "frac_abs_D_ge_0p5": 0.0903
+    }
+  }
+}

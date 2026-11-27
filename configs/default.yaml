@@ -1,0 +1,73 @@
+project:
+  name: "pat-net"
+  hf_endpoint: "https://hf-mirror.com"
+
+emobank:
+  backbone: "roberta-base"
+  secondary_backbone: "microsoft/deberta-v3-base"
+  max_length: 128
+  batch_size: 32
+  deberta_batch_size: 16
+  deberta_grad_accum: 2
+  epochs: 6
+  encoder_lr: 2.0e-5
+  deberta_encoder_lr: 1.5e-5
+  head_lr: 3.0e-4
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  latent_dim: 256
+  dropout: 0.2
+  cv_seeds: [42]
+  ensemble_fold0_seeds: [42, 43, 44, 45, 46]
+  max_scale_ratio_bimodal: 0.041
+  max_scale_ratio_unimodal: 0.22
+  loss_weights:
+    kl: 1.0
+    w1: 1.0
+    mom: 0.6
+    mom_mean_mult: 2.20
+    shift_mean: 1.5
+    shift_cdf: 0.8
+    pol_shape: 0.8
+    pol_focus: 1.0
+    pars_p: 0.025
+    pars_a: 0.45
+    pars_rep: 0.60
+    pars_bal: 0.05
+    trans_reg: 0.002
+    reg_loss: 0.30
+  models:
+    - "C1_SparseRidge"
+    - "C2_HybridGBDT"
+    - "scalar_mse"
+    - "gaussian_nll"
+    - "nig_evidential"
+    - "sord"
+    - "dldl_v2"
+    - "dc_ldl"
+    - "uw_ldl"
+    - "beta_nll"
+    - "patnet_unimodal"
+    - "patnet_no_transport"
+    - "patnet"
+  ablations:
+    - "M0_baseline"
+    - "M1_multilayer_conv"
+    - "M2_bipolar_pool"
+    - "M3_tension_route"
+    - "M4_disentangle"
+    - "M5_full_struct"
+
+epic:
+  backbones: ["roberta-base", "microsoft/deberta-v3-base"]
+  epochs: 5
+  batch_size: 16
+  max_length: 160
+  encoder_lr: 2.0e-5
+  head_lr: 3.0e-4
+
+brighter:
+  languages: ["chn", "eng", "deu", "esp"]
+  epochs: 5
+  bigru_epochs: 12
+  max_scale_ratio_ordinal: 0.25

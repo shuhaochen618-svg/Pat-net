@@ -1,0 +1,50 @@
+{
+  "n_raw_annotations": 14172,
+  "n_items": 3000,
+  "unique_annotators": 74,
+  "shared_parent_text_cross_split_leaks": 0,
+  "split_counts": {
+    "train": 1816,
+    "test": 591,
+    "dev_cal": 297,
+    "dev_select": 296
+  },
+  "cv_fold_counts": {
+    "0": 591,
+    "1": 596,
+    "2": 616,
+    "3": 588,
+    "4": 609
+  },
+  "mean_p_iro": 0.3126,
+  "polarized_items_n": 1221,
+  "polarized_frac": 0.407,
+  "unanimous_items_n": 976,
+  "both_sex_ge1_items_n": 2735,
+  "both_sex_ge1_high_div_ge_0_4_frac": 0.3437,
+  "both_sex_ge2_items_n": 1617,
+  "both_sex_ge2_high_div_ge_0_35_n": 525,
+  "both_sex_ge2_high_div_ge_0_35_frac": 0.3247,
+  "top_nationalities_irony_rate": {
+    "Ireland": {
+      "count": 2992,
+      "mean": 0.2945
+    },
+    "United Kingdom": {
+      "count": 2847,
+      "mean": 0.326
+    },
+    "Australia": {
+      "count": 2797,
+      "mean": 0.3414
+    },
+    "United States": {
+      "count": 2782,
+      "mean": 0.2764
+    },
+    "India": {
+      "count": 2754,
+      "mean": 0.3351
+    }
+  }
+}

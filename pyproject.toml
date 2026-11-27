@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pat-net"
+version = "1.0.0"
+description = "Disentangling affective polarization and perspective shift via identifiable mixture transport and conformal risk control"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+keywords = [
+    "affective-computing",
+    "perspectivist-nlp",
+    "distributional-learning",
+    "uncertainty-disentanglement",
+    "wasserstein-transport",
+    "conformal-risk-control",
+]
+
+[tool.setuptools.packages.find]
+include = ["src*"]

@@ -1,0 +1,34 @@
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Experiment outputs & logs (generated at runtime)
+outputs/
+logs/
+figures/
+
+# Model weights & HuggingFace caches (large binaries)
+pretrained/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+*.part
+hf_cache/
+ms_cache/
+
+# Raw third-party datasets (downloadable via scripts/download_data.py)
+data/raw/*
+!data/raw/.gitkeep
+
+# Temporary files & IDE metadata
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+.pytest_cache/
